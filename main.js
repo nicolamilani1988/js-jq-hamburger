@@ -18,9 +18,21 @@ function hideMenu(){
 // }
 
 
+// function init(){
+//   $(".header-right > a").click(showMenu);
+//   $(".close").click(hideMenu);
+// }
+//
+// init();
+
+
+// VERSIONE COMPRESSA CON TOGGLE
+function toggleMenu(){
+  $(".hamburger-menu").toggleClass("active");
+}
+
 function init(){
-  $(".header-right > a").click(showMenu);
-  $(".close").click(hideMenu);
+  $(".header-right > a, .close").click(toggleMenu);
 }
 
 init();
